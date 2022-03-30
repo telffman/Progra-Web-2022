@@ -1,5 +1,22 @@
 h1{color: rebeccapurple;}
 /* comentarios */
 table{color:royalblue;}
-body{background-color: plum;}
-
+body{background-color: blanchedalmond;}
+div {
+    width: 300px;
+    border: 15px solid red;
+    padding: 50px;
+    margin: 20px;
+  }
+header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: silver;
+  }
+menu{
+    list-style-type: none;
+}  
+menu > a > li{
+    display: inline;
+}
