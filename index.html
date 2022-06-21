@@ -1,125 +1,281 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="stylePC.css">
-<style>
-    body {font-family: "Times New Roman", Georgia, Serif;}
-    h1, h2, h3, h4, h5, h6 {
-      font-family: "Playfair Display";
-      letter-spacing: 5px;
-      object-fit: cover;
-    }
+  <head>
+    <title>Proyecto Cava</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylePC.css" />
+    <style>
+      body {
+        font-family: "Times New Roman", Georgia, Serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+        object-fit: cover;
+      }
     </style>
-</head>
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">ProyectoCava</a>
-    <a href=indexpc.html class="w3-bar-item w3-button">Lists</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#menu" class="w3-bar-item w3-button">Varieties</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="top-image" src="./images/MoreWine.jpeg" alt="404 unexpected error" width="100%" height="800px" object-fit="cover">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">ProyectoCava</h1>
-  </div>
-</header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="./images/Food & Wine.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750" object-fit="cover">
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="top">
+      <div class="bar white padding card" style="letter-spacing: 4px">
+        <a href="#home" class="bar-item button">ProyectoCava</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="right hide-small">
+          <a href="#about" class="bar-item button">About</a>
+          <a href="#menu" class="bar-item button">Varieties</a>
+          <a href="#contact" class="bar-item button">Contact</a>
+        </div>
+      </div>
     </div>
 
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">About ProyectoCava</h1><br>
-      <h5 class="w3-center">Enjoying life since 1998</h5>
-      <p class="w3-large"> ProyectoCava was founded in 2022 by Tomas Elffman. We hope to embrace wine lovers in this on-line space designed with love and style. You'll find here detailed lists for discovering new wines, wineries, varieties and more. Enjoy yourself, drink wine and keep calm, theres wine in the cellar 😉</p>
-      <p class="w3-large w3-text-grey w3-hide-medium"> There is much more to wine than just fermented fruit juice. From where and how the grapes are grown to the techniques used to turn them into wine to how we experience it in the glass.</p>
-      <p class="w3-large w3-text-grey w3-hide-medium">In its simplest form, wine doesn’t require much at all. It is simply fermented grape juice and fermentation is a natural process that occurs with or without human intervention.</p>
-      <p class="w3-large w3-text-grey w3-hide-medium">What makes wine complex – and extremely enjoyable – is the potential to influence the winemaking process in many ways, and this is what gives us all different kinds and styles of wine. The fact is, you can technically make wine by letting a pile of grapes ferment in a bucket or your bathtub. But it probably won’t be wine you want to drink!</p>
+    <!-- Header -->
+    <header
+      class="display-container content wide"
+      style="max-width: 1600px; min-width: 500px"
+      id="home"
+    >
+    <img class="top-image" src="./images/MoreWine.jpeg" alt="404 unexpected error" width="100%" height="800px" object-fit="cover">
+   
+    <!--<div id="imgGallary" class="container fade">
+      <img src="images/Food & Wine.jpg" alt="" width="100%" height="800" object-fit="cover"/>
+      <img src="images/Grapes.jpg" alt="" width="100%" height="800" object-fit="cover" />
+      <img src="images/MoreWine.jpeg" alt="" width="100%" height="800" object-fit="cover" />
+      <img src="images/Wine Glass.jpg" alt="" width="100%" height="800" object-fit="cover" />
+  </div>-->
+      <div class="display-bottomright padding-large opacity">
+        <h1 class="xxlarge text-white">ProyectoCava</h1>
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="content" style="max-width: 1100px">
+      <!-- About Section -->
+      <div class="row padding-64" id="about">
+        <div class="col m6 padding-large hide-small">
+          <img
+            src="./images/Food & Wine.jpg"
+            class="round image opacity-min"
+            alt="Table Setting"
+            width="600"
+            height="750"
+            object-fit="cover"
+          />
+        </div>
+
+        <div class="col m6 padding-large">
+          <h1 class="center">About ProyectoCava</h1>
+          <br />
+          <h5 class="center">Enjoying life since 1998</h5>
+          <p class="large">
+            ProyectoCava was founded in 2022 by Tomas Elffman. We hope to
+            embrace wine lovers in this on-line space designed with love and
+            style. You'll find here detailed lists for discovering new wines,
+            wineries, varieties and more. Enjoy yourself, drink wine and keep
+            calm, theres wine in the cellar 😉
+          </p>
+          <p class="large text-grey hide-medium">
+            There is much more to wine than just fermented fruit juice. From
+            where and how the grapes are grown to the techniques used to turn
+            them into wine to how we experience it in the glass.
+          </p>
+          <p class="large text-grey hide-medium">
+            In its simplest form, wine doesn’t require much at all. It is simply
+            fermented grape juice and fermentation is a natural process that
+            occurs with or without human intervention.
+          </p>
+          <p class="large text-grey hide-medium">
+            What makes wine complex – and extremely enjoyable – is the potential
+            to influence the winemaking process in many ways, and this is what
+            gives us all different kinds and styles of wine. The fact is, you
+            can technically make wine by letting a pile of grapes ferment in a
+            bucket or your bathtub. But it probably won’t be wine you want to
+            drink!
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Menu Section -->
+      <div class="row padding-64" id="menu">
+        <div class="col l6 padding-large">
+          <h1 class="center">Wine Varieties</h1>
+          <br />
+          <h4>Cabernet-Franc</h4>
+          <p class="text-grey">
+            Classic medium-bodied red with moderate tannins.
+            nice balance between red fruits, herbs, and peppery earthiness. 
+            Its medium-to-high acidity makes it refreshingly easy-to-drink.
+            <div class="like_button_container" data-commentid="1"></div>
+          </p>
+          
+          <h4>Malbec</h4>
+          <p class="text-grey">
+            Full-bodied and acidic, deep purple-red wine with juicy fruit flavors like plum and black cherry.
+            The malbec grape is known for its inky dark color that express terroir well which means influences of soil, nutrients and climate appear in unique ways on the palate.
+            <div class="like_button_container" data-commentid="2"></div>
+          </p>
+
+          <h4>Cabernet-Sauvignon</h4>
+          <p class="text-grey">
+            Well-structured and complex wines. Styles range from soft,
+            approachable and elegant to powerful, plush and tannic.
+            <div class="like_button_container" data-commentid="3"></div>
+          </p>
+
+          <h4>Pinot Noir</h4>
+          <p class="text-grey">
+            These elegant wines are often slightly translucent in colour, with a
+            delicate mouthfeel and aromas of red berries, flowers and sometimes
+            the savouriness of spice.
+            <div class="like_button_container" data-commentid="4"></div>
+          </p>
+
+          <h4>Bonarda</h4>
+          <p class="text-grey">
+            Very fruity on the nose, with notes of black cherry and fresh blueberry which
+            become more complex, giving off nuanced aromas of violets, 5-spice and allspice.
+            On the palate, Bonarda has an initial burst of fruitiness, a medium-body, juicy acidity, and a smooth, low-tannin finish.
+            <div class="like_button_container" data-commentid="5"></div>
+          </p>
+
+          <h4>Syrah</h4>
+          <p class="text-grey">
+            Boasting rich flavours, high tannin and high alcohol content, these
+            wines are bold, dark and rich. They get their deep colour and much
+            of their flavour from the skin of the grapes.
+            <div class="like_button_container" data-commentid="6"></div>
+          </p>
+
+          <h4>Blends</h4>
+          <p class="text-grey">
+            Different batches of wine can be mixed together before bottling to
+            create a desired style and taste. For example, a winemaker might
+            blend different varieties to achieve a more ‘complete’ and
+            consistent wine, such as in GSM (Grenache Shiraz Mataro). Or they
+            may blend different batches of the same variety to adjust acid or
+            tannin levels.
+            <div class="like_button_container" data-commentid="7"></div>
+          </p>
+        </div>
+
+        <div class="col l6 padding-large">
+          <img
+            src="./images/Vineyard 2.png"
+            class="round image opacity-min"
+            alt="Menu"
+            style="width: 100%"
+            object-fit="cover"
+          />
+
+          <img
+            src="./images/Vineyard 3.jpg"
+            class="round image opacity-min"
+            alt="Menu"
+            style="width: 100%"
+            object-fit="cover"
+          />
+        </div>
+      </div>
+
+      <div id="to_do_list"></div>
+
+      <!-- Contact Section -->
+      <div class="container padding-64" id="contact">
+        <h1>Contact</h1>
+        <br />
+        <p>
+          We offer full-service catering for wine tasting events, large or
+          small. We understand your needs and we will cater the best wine
+          selection to satisfy the most demanding palates. Do not hesitate to
+          contact us.
+        </p>
+        <p class="text-blue-grey large">
+          <b
+            >Wine Tasting Service, Juan Ramírez de Velasco 1456, C1414 CABA,
+            Ciudad de Buenos Aires</b
+          >
+        </p>
+        <p>
+          You can also contact us by phone 11 48266005 or email
+          proyectocava@gmail.com, or you can send us a message here:
+        </p>
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="input padding-16"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="input padding-16"
+              type="number"
+              placeholder="How many people"
+              required
+              name="People"
+            />
+          </p>
+          <p>
+            <input
+              class="input padding-16"
+              type="datetime-local"
+              placeholder="Date and time"
+              required
+              name="date"
+              value="2022-05-16T20:00"
+            />
+          </p>
+          <p>
+            <input
+              class="input padding-16"
+              type="text"
+              placeholder="Message \ Special requirements"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button class="button light-grey section" type="submit">
+              SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      </div>
+
+      <!-- End page content -->
     </div>
-  </div>
-  
-  <hr>
-  
-  <!-- Menu Section -->
-  <div class="w3-row w3-padding-64" id="menu">
-    <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Wine Varieties</h1><br>
-      <h4>Cabernet-Franc</h4>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h4>Malbec</h4>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h4>Cabernet-Sauvignon</h4>
-      <p class="w3-text-grey">Well-structured and complex wines. Styles range from soft, approachable and elegant to powerful, plush and tannic.</p><br>
-    
-      <h4>Pinot Noir</h4>
-      <p class="w3-text-grey">These elegant wines are often slightly translucent in colour, with a delicate mouthfeel and aromas of red berries, flowers and sometimes the savouriness of spice.</p><br>
 
-      <h4>Bonarda</h4>
-      <p></p><br>
-    
-      <h4>Syrah</h4>
-      <p class="w3-text-grey">Boasting rich flavours, high tannin and high alcohol content, these wines are bold, dark and rich. They get their deep colour and much of their flavour from the skin of the grapes.</p><br>
-      
-      <h4>Blends</h4>
-      <p class="w3-text-grey">Different batches of wine can be mixed together before bottling to create a desired style and taste. For example, a winemaker might blend different varieties to achieve a more ‘complete’ and consistent wine, such as in GSM (Grenache Shiraz Mataro). Or they may blend different batches of the same variety to adjust acid or tannin levels.</p>
-    </div>
-    
-    <div class="w3-col l6 w3-padding-large">
-        
-    
-        <img src="./images/Vineyard 2.png" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%" object-fit="cover">
-        
-        <img src="./images/Vineyard 3.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%" object-fit="cover">
+    <!-- Footer -->
+    <footer class="center light-grey padding-32">
+      <p>
+        Powered by
+        <a
+          href="https://youtu.be/iFG18LOlj-o"
+          title="W3.CSS"
+          target="_blank"
+          class="hover-text-green"
+          >Inspiring Music</a
+        >
+      </p>
+    </footer>
+  </body>
+ <!-- Cargar React. -->
+  <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 
-    </div>
-  </div>
-
-  <hr>
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-64" id="contact">
-    <h1>Contact</h1><br>
-    <p>We offer full-service catering for wine tasting events, large or small. We understand your needs and we will cater the best wine selection to satisfy the most demanding palates. Do not hesitate to contact us.</p>
-    <p class="w3-text-blue-grey w3-large"><b>Wine Tasting Service, Juan Ramírez de Velasco 1456, C1414 CABA, Ciudad de Buenos Aires</b></p>
-    <p>You can also contact us by phone 11 48266005 or email proyectocava@gmail.com, or you can send us a message here:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2022-05-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
-    </form>
-  </div>
-  
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
-</body>
+  <!-- Cargamos nuestro componente de React. -->
+  <script src="like_button.js"></script>
+  <script src="todo_list.js"></script>
 </html>
