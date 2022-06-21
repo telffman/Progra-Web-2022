@@ -1,9 +1,41 @@
+function darktheme() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
 
 'use strict';
 
-const r = React.createElement;
+ const r = React.createElement;
+ 
+ class LikeButton extends React.Component {
+   constructor(props) {
+     super(props);
+     this.state = { liked: false };
+   }
+ 
+   render() {
+     if (this.state.liked) {
+       return 'You liked this Wine Variety!';
+     }
+ 
+     return r(
+       'button',
+       { onClick: () => this.setState({ liked: true }) },
+       'Like'
+     );
+   }
+ }
+ 
+ document.querySelectorAll('.like_button_container')
+   .forEach(domContainer => {
+     const commentID = parseInt(domContainer.dataset.commentid, 10);
+     const root = ReactDOM.createRoot(domContainer);
+     root.render(
+       r(LikeButton, { commentID: commentID })
+     );
+   });
 
-class TodoApp extends React.Component {
+   class TodoApp extends React.Component {
     constructor(props) {
       super(props);
       this.state = { items: [], text: '' };
@@ -81,4 +113,4 @@ class TodoApp extends React.Component {
     const root = ReactDOM.createRoot(domContainer);
     root.render(r(TodoApp, null));
 
-    
+       

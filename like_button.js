@@ -1,6 +1,6 @@
 'use strict';
 
-const e = React.createElement;
+const r = React.createElement;
 
 class LikeButton extends React.Component {
   constructor(props) {
@@ -13,7 +13,7 @@ class LikeButton extends React.Component {
       return 'You liked this Wine Variety!';
     }
 
-    return e(
+    return r(
       'button',
       { onClick: () => this.setState({ liked: true }) },
       'Like'
@@ -21,14 +21,12 @@ class LikeButton extends React.Component {
   }
 }
 
-// Find all DOM containers, and render Like buttons into them.
 document.querySelectorAll('.like_button_container')
   .forEach(domContainer => {
-    // Read the comment ID from a data-* attribute.
     const commentID = parseInt(domContainer.dataset.commentid, 10);
     const root = ReactDOM.createRoot(domContainer);
     root.render(
-      e(LikeButton, { commentID: commentID })
+      r(LikeButton, { commentID: commentID })
     );
   });
 

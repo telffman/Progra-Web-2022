@@ -92,3 +92,8 @@ console.log(seleccionarClaseUnico)
 5) Obligar al usuario a estar de acuerdo con terminos y condiciones
 6) Mostrarle al usuarios en un parrafo, los datos que ingreso
 */
+
+function darktheme() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
