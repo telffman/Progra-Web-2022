@@ -97,3 +97,18 @@ function darktheme() {
     var element = document.body;
     element.classList.toggle("dark-mode");
  }
+
+function calculo(){
+    let cuantos = document.getElementById("personas").value
+    let chequeado = document.getElementById("bases").checked
+    if(chequeado!= true){
+        alert("Debe estar de acuerdo con las condiciones")
+    }
+    if(cuantos <= 1){
+        alert ("No te vas a tomar un vino solo sinvenguencha")
+    }
+    if(cauntos > 1 && chequeado == true){
+        document.append(cuantos/0.75)
+
+    }
+} 

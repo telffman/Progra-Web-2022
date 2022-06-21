@@ -1,7 +1,41 @@
 function darktheme() {
     var element = document.body;
+    var elementfooter = document.getElementById("footer"); 
+    var elementnavbar = document.getElementById("navbar");
     element.classList.toggle("dark-mode");
+    console.log(elementfooter.style.backgroundColor);
+    if (elementfooter.style.backgroundColor == "lightgray") {
+    elementfooter.style.backgroundColor = "black"
+    elementfooter.style.color = "white"
+    }
+    else {
+        elementfooter.style.backgroundColor = "lightgray"
+        elementfooter.style.color = "black"
+    }
+    console.log(elementnavbar.style.backgroundColor);
+    if (elementnavbar.style.backgroundColor == "black") {
+    elementnavbar.style.backgroundColor = "white"
+    elementnavbar.style.color = "black"
+    }
+    else {
+        elementnavbar.style.backgroundColor = "black"
+        elementnavbar.style.color = "white"
+    }
  }
+function calculo(){
+    let cuantos = document.getElementById("personas").value
+    let chequeado = document.getElementById("bases").checked
+    if(chequeado!= true){
+        alert("Debe estar de acuerdo con las condiciones")
+    }
+    if(cuantos <= 1){
+        alert ("No te vas a tomar un vino solo sinvenguencha")
+    }
+    if(cauntos > 1 && chequeado == true){
+        document.append(int(cuantos/0.75))
+
+    }
+} 
 
 'use strict';
 
